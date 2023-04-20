@@ -1,0 +1,154 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background-color: #262438;
+}
+
+/* pour les écrans de taille inférieure à 768px */
+@media screen and (max-width: 767px) {
+	body h1 a {
+		color: #ffffff;
+		font-size: 0.5em;
+	}
+	
+	nav a {
+		font-size: 0.65em;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: left;
+		align-items: center; /* Ajout de cette règle */
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		gap: 20px;
+	  }
+  }
+  
+  /* pour les écrans de taille comprise entre 768px et 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	body h1 a {
+		color: #ffffff;
+		font-size: 1em;
+	}
+	
+	nav a {
+		font-size: 1em;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: space-around; /* Ajout de cette règle */
+		align-items: center; /* Ajout de cette règle */
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	  }
+  }
+  
+  /* pour les écrans de taille supérieure ou égale à 1024px */
+@media screen and (min-width: 1024px) {
+	body h1 a {
+		color: #ffffff;
+		font-size: 1.5em;
+	}
+	
+	nav a {
+		font-size: 1.5em;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: space-around; /* Ajout de cette règle */
+		align-items: center; /* Ajout de cette règle */
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	  }
+  }
+
+a:hover {
+	text-decoration: underline;
+	transform: scale(1.25);
+	transition: transform 0.3s ease;
+  }
+  
+nav ul li {
+	position: relative;
+}
+
+nav ul li a {
+	color: #d81414;
+	display: block;
+	padding: 1px;
+	text-decoration: none;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+	max-width: 90%;
+  }  
+
+nav .dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #333;
+	border: 3px solid #d81414;
+	padding: 10px;
+}
+
+nav .dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+nav .dropdown-menu a:hover {
+	background-color: #ddd;
+	color: #333;
+}  
+
+nav .dropdown-menu a:focus {
+	outline: none;
+	border: 1px solid #333;
+}
+  
+section {
+	padding: 50px 10%;
+}
+
+h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+footer {
+	background-color: #000000;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+a {
+	color: rgb(35, 35, 255);
+}
+
+#contact {
+	margin-bottom: 80px;
+}
